@@ -3,12 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zach's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Zach's Websote</h1>
-    <p>Here's a template paragraph.</p>
-    <p>Here's another template paragraph.</p>
-    <p>Here's yet another template paragraph.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Zach's Portfolio</h1>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Short bio or introduction. Here you can talk about your journey in web development, your passion for coding, and what motivates you as a developer.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Example project card -->
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Description of the project...</p>
+                <a href="project-link.html">View Project</a>
+            </div>
+            <!-- Additional project cards can be added here -->
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <!-- Additional skills can be listed here -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Zach's Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
