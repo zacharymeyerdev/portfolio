@@ -52,7 +52,7 @@ a:hover,
  */
 abbr[title] {
   /* 1 */
-  text-decoration: underline dotted;
+  text-decoration-style: solid; /* Add this line */
   /* 2 */
   -webkit-text-decoration-style: dotted;
 }
@@ -1224,6 +1224,7 @@ button.uk-icon:not(:disabled) {
  * 7. Remove white background in Chrome.
  */
 .uk-range {
+  appearance: none; /* Add this line */
   /* 1 */
   -webkit-appearance: none;
   /* 2 */
@@ -1409,6 +1410,7 @@ button.uk-icon:not(:disabled) {
  */
 .uk-input,
 .uk-textarea {
+  appearance: none; /* Add this line */
   -webkit-appearance: none;
 }
 /*
@@ -1594,6 +1596,7 @@ select.uk-form-width-xsmall {
  * 3. Set `color` for options in the select dropdown, because the inherited `color` might be too light.
  */
 .uk-select:not([multiple]):not([size]) {
+  appearance: none; /* Add this line */
   /* 1 */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1643,6 +1646,7 @@ select.uk-form-width-xsmall {
  */
 .uk-radio,
 .uk-checkbox {
+  appearance: none; /* Add this line */
   /* 1 */
   display: inline-block;
   height: 16px;
@@ -1766,6 +1770,7 @@ select.uk-form-width-xsmall {
  */
 .uk-form-custom select,
 .uk-form-custom input[type="file"] {
+  appearance: none; /* Add this line */
   /* 1 */
   position: absolute;
   top: 0;
@@ -1895,6 +1900,7 @@ select.uk-form-width-xsmall {
  * 10. Required for `a`.
  */
 .uk-button {
+  appearance: none; /* Add this line */
   /* 1 */
   margin: 0;
   /* 2 */
@@ -2156,16 +2162,10 @@ select.uk-form-width-xsmall {
  * 5. Style
  */
 .uk-progress {
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
   display: block;
   width: 100%;
-  /* 3 */
   border: 0;
-  /* 4 */
   background-color: #f8f8f8;
-  /* 5 */
   margin-bottom: 20px;
   height: 15px;
   border-radius: 500px;
@@ -3273,6 +3273,7 @@ select.uk-form-width-xsmall {
  * 9. Style
  */
 .uk-search-input {
+  appearance: none; /* Add this line */
   /* 1 */
   box-sizing: border-box;
   /* 2 */
@@ -7166,6 +7167,7 @@ ul.uk-nav-sub {
  * 4. Style
  */
 .uk-text-background {
+  background-clip: border-box; /* Add this line */
   /* 1 */
   -webkit-background-clip: text;
   /* 2 */
@@ -7849,6 +7851,7 @@ iframe[data-uk-cover] {
  * 6. Clip child elements
  */
 [class*='uk-inline'] {
+  backface-visibility: hidden; /* Add this line */
   /* 1 */
   display: inline-block;
   /* 2 */
@@ -7977,6 +7980,7 @@ iframe[data-uk-cover] {
  * Fix `overflow: hidden` to be ignored with border-radius and CSS transforms in Webkit
  */
 .uk-inline-clip[class*='uk-border-'] {
+  transform: rotate(45deg); /* Add this line */
   -webkit-transform: translateZ(0);
 }
 /* Box-shadow
@@ -8983,6 +8987,7 @@ iframe[data-uk-cover] {
  */
 /* 1 */
 [class*='uk-transition-scale'] {
+  backface-visibility: hidden; /* Add this line */
   -webkit-backface-visibility: hidden;
 }
 .uk-transition-scale-up {
